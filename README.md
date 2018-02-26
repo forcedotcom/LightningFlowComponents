@@ -22,6 +22,3 @@ Flow Action Components generally do not have a visual focus, although they have 
 Flow Action Components are available in pilot status as of Spring '18.
 
 # [A Note about SFDX](./sfdxintro.md)
-
-# Submissions Encouraged!
-Have you built a useful or interesting Flow Component? We encourage you to make a pull request and add it to this repo. Also feel free to enhance or fix any existing component.
