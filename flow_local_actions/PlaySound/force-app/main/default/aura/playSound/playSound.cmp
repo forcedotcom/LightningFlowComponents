@@ -7,7 +7,7 @@
  For full license text, see LICENSE.txt file in the repo root  or https://opensource.org/licenses/BSD-3-Clause
 
 -->
-<aura:component implements="lightning:availableForFlowScreens,flowruntime:availableForLocalInvocableActions">
+<aura:component implements="lightning:availableForFlowScreens,lightning:availableForFlowActions">
     <aura:attribute name="showUI" type="Boolean" default="true"/>
     <aura:attribute name="muted" type="Boolean" default="false"/>
     <aura:attribute name="loop" type="Boolean" default="false"/>
