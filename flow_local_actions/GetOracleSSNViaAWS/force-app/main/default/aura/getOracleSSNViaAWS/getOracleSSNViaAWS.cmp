@@ -7,7 +7,8 @@
  For full license text, see LICENSE.txt file in the repo root  or https://opensource.org/licenses/BSD-3-Clause
 
 -->
-<aura:component implements="flowruntime:availableForLocalInvocableActions">
+<aura:component implements="lightning:availableForFlowAction">
 	<aura:attribute name="userId" type="String" required="true"/>
 	<aura:attribute name="ssn" type="String"/>
+  <aura:attribute name="errorMsg" type="String"/>
 </aura:component>
