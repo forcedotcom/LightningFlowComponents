@@ -6,15 +6,12 @@
  */
  ({
 	invoke : function(component, event, helper) {
-    var userId = component.get("v.userId"),
-      cancelToken = event.getParam("arguments").cancelToken;
-    return helper.fetchSSN(userId, cancelToken).then(
-      $A.getCallback(function(result) {
-        component.set("v.ssn", result);
-      })
-    ).catch(
-      $A.getCallback(function(error) {
-        component.set("v.errorMsg", error && error.message);
-    }));
+    		var userId = component.get("v.userId"),
+      			cancelToken = event.getParam("arguments").cancelToken;
+    		return helper.fetchSSN(userId, cancelToken).then($A.getCallback(function(result) {
+        		component.set("v.ssn", result);
+      		})).catch($A.getCallback(function(error) {
+        		component.set("v.errorMsg", error && error.message);
+    		}));
 	}
 })
