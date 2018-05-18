@@ -16,7 +16,7 @@
                 } else {
                      var errorText = this.status === 0 ?
                       'Request has been terminated\nPossible causes: the network is offline, Origin is not allowed by Access-Control-Allow-Origin, the page is being unloaded, etc.':
-                      this.statusText;
+                      this.statusText || this.status;
                      reject(new Error(errorText));
                 }
               }
