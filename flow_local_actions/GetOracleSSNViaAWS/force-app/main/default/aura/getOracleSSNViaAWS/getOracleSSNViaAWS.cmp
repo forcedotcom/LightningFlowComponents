@@ -10,5 +10,4 @@
 <aura:component implements="lightning:availableForFlowActions">
 	<aura:attribute name="userId" type="String" required="true"/>
 	<aura:attribute name="ssn" type="String"/>
-  	<aura:attribute name="errorMsg" type="String"/>
 </aura:component>
