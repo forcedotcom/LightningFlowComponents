@@ -7,11 +7,15 @@
 1) Make sure that you are authenticated to your target org
 2) from the root of the action component project, type:
 ```
+mkdir mdapioutput
+sfdx force:source:convert -d mdapioutput/
 sfdx force:mdapi:deploy -d mdapioutput/ -w 10 -u [username of target org]
 ```
 Example:
 ```
-~/dev/flowcomponents/flow_action_components/UpdateScreen$ sfdx force:mdapi:deploy -d mdapioutput/ -w 10  -u eware@df17-cc-keynote.brightbank
+$ mkdir mdapioutput
+$ sfdx force:source:convert -d mdapioutput/
+$ sfdx force:mdapi:deploy -d mdapioutput/ -w 10  -u eware@df17-cc-keynote.brightbank
 ```
 **Install manually**
 

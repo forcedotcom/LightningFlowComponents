@@ -2,4 +2,4 @@
 
 ### Installation
 
-Follow the general instructions [here](../Install.md)
+Follow the general instructions [here](../README.md)
