@@ -13,9 +13,9 @@ sfdx force:mdapi:deploy -d mdapioutput/ -w 10 -u [username of target org]
 ```
 Example:
 ```
-~/dev/flowcomponents/flow_action_components/UpdateScreen$ mkdir mdapioutput
-~/dev/flowcomponents/flow_action_components/UpdateScreen$ sfdx force:source:convert -d mdapioutput/
-~/dev/flowcomponents/flow_action_components/UpdateScreen$ sfdx force:mdapi:deploy -d mdapioutput/ -w 10  -u eware@df17-cc-keynote.brightbank
+$ mkdir mdapioutput
+$ sfdx force:source:convert -d mdapioutput/
+$ sfdx force:mdapi:deploy -d mdapioutput/ -w 10  -u eware@df17-cc-keynote.brightbank
 ```
 **Install manually**
 
