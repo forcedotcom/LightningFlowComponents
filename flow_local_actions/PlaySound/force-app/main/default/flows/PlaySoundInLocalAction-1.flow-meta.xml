@@ -15,7 +15,7 @@
         <locationX>380</locationX>
         <locationY>156</locationY>
         <actionName>c:playSound</actionName>
-        <actionType>localAction</actionType>
+        <actionType>component</actionType>
         <connector>
             <targetReference>EndScreen</targetReference>
         </connector>
@@ -42,6 +42,27 @@
             <fieldText>Thank you for watching our demo!</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
     </screens>
-    <startElementReference>PlaySoundLA</startElementReference>
+    <screens>
+        <name>WelcomeScreen</name>
+        <label>WelcomeScreen</label>
+        <locationX>377</locationX>
+        <locationY>26</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>PlaySoundLA</targetReference>
+        </connector>
+        <fields>
+            <name>WelcomeMsg</name>
+            <fieldText>PlaySound plays directly in Local Action</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>WelcomeScreen</startElementReference>
 </Flow>
