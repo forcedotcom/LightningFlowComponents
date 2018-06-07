@@ -15,7 +15,7 @@
         <locationX>257</locationX>
         <locationY>169</locationY>
         <actionName>c:getRESTData</actionName>
-        <actionType>localAction</actionType>
+        <actionType>component</actionType>
         <connector>
             <targetReference>screen</targetReference>
         </connector>

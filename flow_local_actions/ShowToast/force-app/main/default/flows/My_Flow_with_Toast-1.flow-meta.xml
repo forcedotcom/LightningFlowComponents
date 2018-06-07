@@ -15,7 +15,7 @@
         <locationX>737</locationX>
         <locationY>432</locationY>
         <actionName>c:showToast</actionName>
-        <actionType>localAction</actionType>
+        <actionType>component</actionType>
         <connector>
             <targetReference>Empty_Screen</targetReference>
         </connector>
@@ -64,7 +64,7 @@
         <locationX>595</locationX>
         <locationY>431</locationY>
         <actionName>c:showToast</actionName>
-        <actionType>localAction</actionType>
+        <actionType>component</actionType>
         <connector>
             <targetReference>Empty_Screen</targetReference>
         </connector>

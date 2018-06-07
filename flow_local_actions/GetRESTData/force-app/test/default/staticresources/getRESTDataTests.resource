@@ -17,22 +17,34 @@ describe("getRESTData component testing", function(){
         $T.clearRenderedTestComponents();
     });
 
-    describe("Invoke local action", function() {
+    describe("local action", function() {
         beforeEach(function(done) {
             var that = this;
             $T.createComponent("c:getRESTData", { customerId:46 }, true).then(function(component) {
                 that.component = component;
+                var cancelToken = {
+                    requested : false,
+                    promise : new Promise(function(resolve, reject) {
+                    })
+                };
                 $T.run(function() {
-                    component.invoke($A.getCallback(function(status, errorMessage) {
-                        that.status = status;
-                        that.errorMessage = errorMessage;
+                    that.result = component.invoke(cancelToken);
+                    that.result.then(function() {
                         done();
-                    }));
+                    }, function() {
+                        done();
+                    });
                 });
             });
         });
-        it("verify output value", function() {
-            expect(this.status).toBe("SUCCESS");
+        it("should not raise an error", function(done) {
+            this.result.then(function() {
+                done();
+            }, function(reason) {
+                done.fail("Error occured while calling the local action "+reason);
+            });
+        });
+        it("output should be 0.85", function() {
             expect(this.component.get("v.churnVal")).toBe(0.85);
         });
     });

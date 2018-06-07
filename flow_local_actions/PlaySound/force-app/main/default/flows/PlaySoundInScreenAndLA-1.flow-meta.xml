@@ -15,7 +15,7 @@
         <locationX>746</locationX>
         <locationY>428</locationY>
         <actionName>c:playSound</actionName>
-        <actionType>localAction</actionType>
+        <actionType>component</actionType>
         <connector>
             <targetReference>EndScreen</targetReference>
         </connector>
