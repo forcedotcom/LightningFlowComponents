@@ -34,4 +34,4 @@ Note: for great tutorials on all of this, see (https://trailhead.salesforce.com/
 2. In Developer Console, create copies of the subcomponents.
 
 ## Copy/Paste Install for Non-Developers
-Click-installable packages are maintained by the community at this [location](https://sites.google.com/view/flowunofficial/home). Note that community content is not provided by or supported by Salesforce.
+Click-installable packages are maintained by the community at this [location](https://unofficialsf.com/flow-resources/). Note that community content is not provided by or supported by Salesforce.
